@@ -1,3 +1,70 @@
 body {
-    background-color: salmon;
+    margin: 0px;
+}
+
+#header-bar {
+    background-color: rgb(41, 42, 42);
+    width: 100%;
+    height: 2.5em;
+    font-size: 2em;
+    text-align: center;
+    font-family: "poppins";
+    font-weight: 600;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container {
+    background-image: linear-gradient(90deg, rgb(208, 243, 255), rgb(73, 80, 179));
+    padding: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5%;
+}
+
+.card {
+    padding: 5%;
+    height: 25em;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    box-shadow: 1px 1px 1px;
+}
+
+.cover {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.display-heading {
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 1.7em;
+    color: darkslategray;
+    align-self: flex-start;
+}
+
+.display-text {
+    font-family: "poppins";
+    font-size: 0.6em;
+    color: darslategray;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.remove-button {
+    background-color: rgba(212, 85, 57, 0.74);
+}
+
+.toggle-button {
+    background-color: rgba(93, 168, 93, 0.648);
 }
